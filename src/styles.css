@@ -374,11 +374,111 @@ body {
 
 
 
-/* .stations-list .station img,
-.car-list .car img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 10px;
+/* Container for the image and text */
+.image-container {
+    position: relative;
+    width: 100%;
+    /* Full-width container */
+    height: auto;
+    /* Adjust based on content or image */
+    text-align: center;
+    /* Center-align text horizontally */
+    display: flex;
+    /* Flexbox for centering content */
+    flex-direction: column;
+    /* Stack content vertically */
+    justify-content: center;
+    /* Center content vertically */
+    align-items: center;
+    /* Center content horizontally */
+    padding: 20px;
+    /* Optional: Add padding for spacing */
+    background-color: #f4f4f4;
+    /* Optional: Background for visibility */
+}
+
+/* Text overlay styles */
+.text-overlay {
+    font-size: 42px;
+    /* Size of the title */
+    font-weight:bolder;
+    /* Make the title bold */
     margin-bottom: 10px;
-} */
+    /* Space between title and paragraph */
+}
+
+/* Paragraph styling */
+.image-container p {
+    font-size: 16px;
+    /* Adjust font size */
+    line-height: 1.5;
+    /* Improve readability */
+    max-width: 900px;
+    /* Limit width for readability */
+    margin: 0 auto;
+    /* Center the paragraph */
+    color: black;
+    /* Text color */
+    font-weight: 600;
+}
+
+/* Section for vehicle details */
+.vehicle-details {
+    padding: 40px 20px;
+}
+
+/* Container for vehicle info and image */
+.details-container {
+    display: flex;
+    /* Flexbox for horizontal layout */
+    justify-content: space-between;
+    /* Space between left and right sides */
+    align-items: center;
+    /* Center items vertically */
+    gap: 40px;
+    /* Add space between the two sections */
+    max-width: 40rem;
+    /* Limit the container width */
+    margin: 0 auto;
+    /* Center the container */
+}
+
+/* Left side: Vehicle information */
+.vehicle-info {
+    flex: 1;
+    /* Take up available space */
+    text-align: left;
+    /* Align text to the left */
+    line-height: 1.6;
+    /* Line height for readability */
+}
+
+.vehicle-info h2 {
+    font-size: 24px;
+    /* Larger font for the title */
+    margin-bottom: 10px;
+    /* Space below the title */
+    text-decoration: underline;
+}
+
+.vehicle-info p {
+    margin: 5px 0;
+    /* Space between paragraphs */
+}
+
+/* Right side: Vehicle image */
+.vehicle-image {
+    flex: 1;
+    /* Take up available space */
+    text-align: center;
+    /* Center the image */
+}
+
+.vehicle-image img {
+    max-width: 100%;
+    /* Ensure the image fits within its container */
+    border-radius: 8px;
+    /* Optional: Rounded corners for the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional: Add a subtle shadow */
+}
