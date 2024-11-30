@@ -1,0 +1,384 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Appliquer Arial comme police par défaut pour tout le site */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Si vous voulez être spécifique pour certaines sections */
+.header,
+.banner,
+.stations,
+.models,
+.footer {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Section principale */
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+
+/* Titre principal */
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Alignement des éléments de la section droite */
+.right-section {
+    display: flex;
+    align-items: center;
+    /* Centre verticalement l'image et le texte */
+    gap: 20px;
+    /* Espace entre l'image et le texte */
+}
+
+/* Image principale */
+.main-pic {
+    width: 50rem;
+    /* Taille de l'image : 50% de la largeur disponible */
+    height: 40rem;
+    object-fit: cover;
+}
+
+/* Conteneur du texte et du bouton */
+.text-container {
+    text-align: left;
+    /* Aligne le texte à gauche */
+}
+
+/* Texte "BMW X5 Competition" */
+.text-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.btn:hover {
+    background-color: blue;
+}
+
+/* Styles pour la section .banner */
+.banner {
+    display: flex;
+    /* Active Flexbox */
+    flex-direction: column;
+    /* Aligne les éléments en colonne */
+    justify-content: center;
+    /* Centre verticalement */
+    align-items: center;
+    /* Centre horizontalement */
+    text-align: center;
+    
+
+    /* Espacement intérieur */
+}
+
+/* Styles pour le titre */
+.banner h2 {
+    font-size: 36px;
+    /* Taille de la police */
+    /* Espacement entre le titre et le paragraphe */
+    color: #333;
+    /* Couleur du texte */
+}
+
+/* Styles pour le paragraphe */
+.banner p {
+    font-size: 18px;
+    /* Taille de la police */
+    line-height: 1.5;
+    /* Espacement entre les lignes */
+    color: #666;
+    /* Couleur du texte */
+    max-width: 800px;
+    /* Limite la largeur pour un meilleur confort de lecture */
+}
+
+
+/* Section principale */
+.stations {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Titre de la section */
+.stations h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Conteneur des stations */
+.stations-list {
+    display: flex;
+    /* Active Flexbox */
+    justify-content: space-between;
+    /* Distribution uniforme des stations */
+    gap: 20px;
+    /* Espacement entre les stations */
+    margin: 0 auto;
+    max-width: 1200px;
+    /* Largeur maximale de la liste */
+}
+
+/* Une station */
+.station {
+    flex: 1;
+    /* Chaque station occupe la même largeur */
+    height: 300px;
+    /* Hauteur de chaque station */
+    background-size: cover;
+    /* Adapte l'image au conteneur */
+    background-position: center;
+    /* Centre l'image dans le conteneur */
+    border-radius: 8px;
+    /* Coins arrondis */
+    position: relative;
+    /* Nécessaire pour positionner le texte */
+    overflow: hidden;
+    /* Empêche le débordement du contenu */
+}
+
+/* Texte dans la station */
+.station-title {
+    position: absolute;
+    /* Permet de placer le texte sur l'image */
+    bottom: 10px;
+    /* Positionnement en bas */
+    left: 10px;
+    /* Positionnement à gauche */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent pour améliorer la lisibilité */
+    color: #fff;
+    /* Couleur du texte */
+    padding: 5px 10px;
+    /* Espacement interne autour du texte */
+    font-size: 18px;
+    /* Taille de la police */
+    border-radius: 4px;
+    /* Coins arrondis pour le fond */
+}
+
+.stations .btn, .models .btn {
+    
+}
+
+/* .stations,
+.models {
+    padding: 20px;
+    text-align: center;
+}
+
+.stations-list,
+.car-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.station,
+.car {
+    background-color: #ddd;
+    padding: 10px 20px;
+    border-radius: 5px;
+} */
+
+/* Section principale */
+.models {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Titre de la section */
+.models h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Conteneur des voitures */
+.car-list {
+    display: flex; /* Active Flexbox */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    gap: 20px; /* Espacement entre les voitures */
+    justify-content: center; /* Centre les voitures */
+    margin: 0 auto;
+}
+
+/* Une voiture */
+.car {
+    flex: 1 1 calc(33.333% - 20px); /* Ajuste la largeur pour 3 colonnes */
+    max-width: calc(33.333% - 20px); /* Limite à 3 voitures par ligne */
+    height: 300px; /* Hauteur des cartes */
+    background-size: cover; /* Ajuste l'image pour couvrir le conteneur */
+    background-position: center; /* Centre l'image dans la carte */
+    border-radius: 8px; /* Coins arrondis */
+    position: relative; /* Nécessaire pour positionner le texte */
+    overflow: hidden; /* Empêche le débordement des coins arrondis */
+}
+
+/* Texte de la voiture */
+.car-title {
+    position: absolute; /* Place le texte dans le conteneur */
+    bottom: 10px; /* Place le texte en bas */
+    left: 10px; /* Place le texte à gauche */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    color: #fff; /* Couleur du texte */
+    padding: 5px 10px; /* Espacement interne */
+    font-size: 16px; /* Taille de la police */
+    border-radius: 4px; /* Coins arrondis */
+    text-transform: uppercase; /* Met le texte en majuscules */
+    font-weight: bold; /* Gras */
+}
+/* Section principale */
+.models {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f4;
+}
+
+/* Titre de la section */
+.models h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Conteneur des voitures */
+.car-list {
+    display: flex;
+    /* Active Flexbox */
+    justify-content: space-between;
+    /* Espace uniforme entre les modèles */
+    gap: 20px;
+    /* Espacement entre les modèles */
+    overflow-x: auto;
+    /* Active un défilement horizontal si nécessaire */
+}
+
+/* Une voiture */
+.car {
+    /* flex: 0 0 calc(20% - 20px); */
+    /* Chaque modèle occupe 20% de la largeur */
+    height: 300px;
+    /* Hauteur des cartes */
+    background-size: cover;
+    /* Ajuste l'image pour couvrir la carte */
+    background-position: center;
+    /* Centre l'image */
+    border-radius: 8px;
+    /* Coins arrondis */
+    position: relative;
+    /* Nécessaire pour positionner le texte */
+    overflow: hidden;
+    /* Empêche le débordement des coins arrondis */
+}
+
+/* Texte de la voiture */
+.car-title {
+    position: absolute;
+    /* Place le texte dans le conteneur */
+    bottom: 10px;
+    /* Place le texte en bas */
+    left: 10px;
+    /* Place le texte à gauche */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fond semi-transparent */
+    color: #fff;
+    /* Couleur du texte */
+    padding: 5px 10px;
+    /* Espacement interne */
+    font-size: 16px;
+    /* Taille de la police */
+    border-radius: 4px;
+    /* Coins arrondis */
+    text-transform: uppercase;
+    /* Met le texte en majuscules */
+    font-weight: bold;
+    /* Gras */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+
+/* .stations-list .station img,
+.car-list .car img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+} */
