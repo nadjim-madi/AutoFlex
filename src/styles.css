@@ -391,7 +391,7 @@ body {
     /* Center content vertically */
     align-items: center;
     /* Center content horizontally */
-    padding: 20px;
+    padding-bottom: 40px;
     /* Optional: Add padding for spacing */
     background-color: #f4f4f4;
     /* Optional: Background for visibility */
@@ -423,7 +423,7 @@ body {
 }
 
 /* Section for vehicle details */
-.vehicle-details {
+.vehicUle-details, .station-details {
     padding: 40px 20px;
 }
 
@@ -444,7 +444,7 @@ body {
 }
 
 /* Left side: Vehicle information */
-.vehicle-info {
+.vehicule-info, .station-info {
     flex: 1;
     /* Take up available space */
     text-align: left;
@@ -453,7 +453,7 @@ body {
     /* Line height for readability */
 }
 
-.vehicle-info h2 {
+.vehicule-info h2, .station-info h2 {
     font-size: 24px;
     /* Larger font for the title */
     margin-bottom: 10px;
@@ -461,20 +461,20 @@ body {
     text-decoration: underline;
 }
 
-.vehicle-info p {
+.vehicule-info p, .station-info p {
     margin: 5px 0;
     /* Space between paragraphs */
 }
 
 /* Right side: Vehicle image */
-.vehicle-image {
+.vehicule-image, .station-image {
     flex: 1;
     /* Take up available space */
     text-align: center;
     /* Center the image */
 }
 
-.vehicle-image img {
+.vehicule-image img, .station-image img {
     max-width: 100%;
     /* Ensure the image fits within its container */
     border-radius: 8px;
